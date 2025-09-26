@@ -1,11 +1,27 @@
 """
 Practical 2 - Password Program
 """
+MINIMUM_PASSWORD_LENGTH = 5  # set variable
 
-MINIMUM_PASSWORD_LENGTH = 5 # set variable
 
-user_password = input("Password: ")
-while len(user_password) < MINIMUM_PASSWORD_LENGTH:
-    print("Invalid")
+def main():
+    """This is the main function for the password program"""
+    user_password = get_valid_password() # store the returned password
+    display_password(user_password) # pass password into function
+
+
+def get_valid_password():
+    """Determine if password is considered valid"""
     user_password = input("Password: ")
-print("*" * len(user_password))
+    while len(user_password) < MINIMUM_PASSWORD_LENGTH:
+        print("Invalid")
+        user_password = input("Password: ")
+    return user_password
+
+
+def display_password(user_password):
+    """This function will display the length of characters of the passwords"""
+    print("*" * len(user_password))
+
+
+main()
