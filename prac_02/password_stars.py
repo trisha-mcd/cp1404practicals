@@ -1,5 +1,6 @@
 """
-Practical 2 - Password Program
+CP1404/CP5632 - Practical
+Program to print password as *
 """
 MINIMUM_PASSWORD_LENGTH = 5  # set variable
 
