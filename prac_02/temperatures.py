@@ -27,14 +27,14 @@ def main():
 
 
 def calculate_celsius():
-    """Calculate Celsius degrees"""
+    """Calculate and Convert Celsius to Fahrenheit"""
     fahrenheit = float(input("Fahrenheit : "))
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
 
 def calculate_fahrenheit():
-    """Calculate Fahrenheit"""
+    """Calculate and Convert Celsius to Fahrenheit"""
     celsius = float(input("Celsius: "))
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
