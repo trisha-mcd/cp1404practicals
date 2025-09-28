@@ -13,7 +13,7 @@ def main():
 
 
 def determine_score(score):
-    """This function will determine score"""
+    """Determine result based on score"""
     if score < 0 or score > 100:
         return "Invalid score"
     elif score >= 90:
@@ -24,4 +24,5 @@ def determine_score(score):
         return "Bad"
 
 
-main()
+if __name__ == "__main__": # only run the entire program if this file is being run directly
+    main()

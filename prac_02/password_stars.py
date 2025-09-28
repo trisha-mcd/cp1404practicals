@@ -20,7 +20,7 @@ def get_valid_password():
 
 
 def display_password(user_password):
-    """This function will display the length of characters of the passwords"""
+    """Display the length of characters of the passwords"""
     print("*" * len(user_password))
 
 
