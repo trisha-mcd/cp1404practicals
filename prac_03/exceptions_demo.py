@@ -6,6 +6,7 @@ Answer the following questions:
 2. When will a ZeroDivisionError occur?
 - When the denominator is 0
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
+- By adding an if else statement
 """
 
 try:
