@@ -29,6 +29,7 @@ def read_data_infile(filename=FILENAME):
     return data_infile
 
 
+
 def print_subject_details(data_infile: list):
     """Print data from nested list"""
     for subject_details in data_infile:
