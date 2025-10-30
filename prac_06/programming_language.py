@@ -7,6 +7,7 @@ Actual time: 1hr 16 mins
 
 
 class ProgrammingLanguage:
+    """Represent Programming Languages"""
     def __init__(self, name="", typing="Dynamic", support_reflection=False, year=0):
         """Store programming language values,
         typing: Static or Dynamic
