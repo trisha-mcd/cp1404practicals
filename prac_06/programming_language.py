@@ -1,8 +1,8 @@
 """CP1404 - Practical
 Creating a class for programming language
-Started - Finished: 11:50am -
+Started - Finished: 11:50am - 1:06pm
 Estimated time: 50 minutes
-Actual time:
+Actual time: 1hr 16 mins
  """
 
 
