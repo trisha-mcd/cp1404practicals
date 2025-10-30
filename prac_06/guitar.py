@@ -16,22 +16,30 @@ class Guitar:
         self.year = year
         self.cost = cost
 
+    # def __str__(self):
+    #     """Return values into string format"""
+    #     return f"{self.name} ({self.year}) : ${self.cost:.2f}"
+
     def __str__(self):
-        """Return values into string format"""
-        return f"{self.name} ({self.year}) : ${self.cost:.2f}"
+        """Return values into string format, for guitar_test output"""
+        return f"{self.name} ({self.year}), worth ${self.cost:.2f} {self.is_vintage()}"
 
     def get_age(self):
         """Returns how old the guitar is in years"""
         age = YEAR - self.year
         return age
 
+        # def is_vintage(self):
+        #     """Returns True if the guitar is 50 or more years old"""
+        #     # if self.get_age() >= 50:
+        #     #     return True
+        #     # else:
+        #     #     return False
+
     def is_vintage(self):
-        """Returns True if the guitar is 50 or more years old"""
+        """Returns (vintage) if the guitar is 50 or more years old, for guitar_test output"""
         if self.get_age() >= 50:
-            return True
+            is_vintage_string = "(vintage)"
         else:
-            return False
-
-
-
-
+            is_vintage_string = ""
+        return f"{is_vintage_string}"

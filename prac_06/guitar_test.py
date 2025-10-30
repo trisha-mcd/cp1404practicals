@@ -18,10 +18,23 @@ def main():
     print(f"{gibson.name} is_vintage() - Expected True. Got {gibson.is_vintage()}")
     print(f"{another_guitar.name} is_vintage() - Expected False. Got {another_guitar.is_vintage()}")
 
+    guitars = []
     print("My guitars!")
-    name = input("Name: ")
-    year = int(input("Year: "))
-    cost = float(input("Cost: "))
-
+    is_valid_input = False
+    while not is_valid_input:
+        try:
+            name = input("Name: ").strip()
+            if name == "":
+                is_valid_input = True  # stop loop
+                continue
+            year = int(input("Year: "))
+            cost = float(input("Cost: "))
+            guitars.append(Guitar(name, year, cost))
+            print(f"{name} ({year}) : ${cost} added.\n")
+        except ValueError:
+            print("Invalid")
+    print("These are my guitars")
+    for i, guitar in enumerate (guitars):
+        print(f"Guitar {i}: {guitar}")
 
 main()
