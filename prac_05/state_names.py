@@ -27,3 +27,4 @@ while state_code != "":
         print("Input is incorrect")
     state_code = input("Enter short state: ").upper()
 
+
