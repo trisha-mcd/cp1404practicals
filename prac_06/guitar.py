@@ -2,7 +2,7 @@
 Creating a class for guitars
 Started - Finished: 2:00pm - 2:30pm
 Estimated time: 50 minutes
-Actual time: 30 mins
+Actual time: 30 mins + 10 mins to adjust for guitar_test
  """
 YEAR = 2022
 
