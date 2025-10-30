@@ -1,8 +1,8 @@
 """CP1404 - Practical
 Creating a class for guitars
-Started - Finished:
+Started - Finished: 2:00pm - 2:30pm
 Estimated time: 50 minutes
-Actual time:
+Actual time: 30 mins
  """
 YEAR = 2022
 
@@ -34,8 +34,4 @@ class Guitar:
 
 
 
-gibson = Guitar("Gibson L-5 CES", 1922, 16035.40)
-another_guitar = Guitar("Another Guitar", 2013, 16035.40)
-print(gibson)
-print(gibson.get_age())
-print(gibson.is_vintage())
+
