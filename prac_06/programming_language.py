@@ -5,12 +5,21 @@ Estimated time: 50 minutes
 Actual time:
  """
 
+
 class ProgrammingLanguage:
-    def __init__(self, is_dynamic = False, support_reflection = False, year = 0):
-        """Initialise programming language,
+    def __init__(self, name="", typing="Dynamic", support_reflection=False, year=0):
+        """Store programming language values,
         typing: Static or Dynamic
         reflection: Yes or No
         Year: int"""
-        self.is_dynamic = is_dynamic
+        self.name = name
+        self.typing = typing
         self.support_reflection = support_reflection
         self.year = year
+
+    def is_dynamic(self):
+        """Return True if typing is dynamic"""
+        return self.typing.lower() == "dynamic"
+
+    def __str__(self):
+        return f"{self.name}, {self.typing} Typing, Reflection={self.support_reflection}, First appeared in {self.year}"
