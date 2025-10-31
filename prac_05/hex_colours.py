@@ -12,3 +12,4 @@ while colour_name != "":
     else:
         print("That colour is not in the list")
     colour_name = input("Enter colour name: ")
+    colour_name = input("Enter colour name: ")
