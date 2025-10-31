@@ -22,7 +22,7 @@ class Guitar:
 
     def __str__(self):
         """Return values into string format, for guitar_test output"""
-        return f"{self.name} ({self.year}), worth ${self.cost:.2f} {self.is_vintage()}"
+        return f"{self.name: >21} ({self.year}), worth ${self.cost: >9} {self.is_vintage()}"
 
     def get_age(self):
         """Returns how old the guitar is in years"""
